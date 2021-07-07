@@ -1,0 +1,21 @@
+<%- include('./partials/header'); %>
+        
+        <ul class="boxes">
+            
+            <% data.forEach(cat => { %>
+                <li class="box">
+                    <a href="/meal/<%=cat.strMeal%>"><h2><%= cat.strMeal %></h2></a>
+                    <!-- <p class="tip">Served to brave people in our notorious antique tea cups.</p> -->
+                    <dl>
+                        <!-- <dt><%= cat.strMealThumb %></dt> -->
+                        <a href="/meal/<%=cat.strMeal%>"><img src="<%= cat.strMealThumb %>" alt="<%= cat.strMeal %>"></a>
+                        
+                    </dl>
+                </li>
+            <% })  %>
+    
+        </ul>
+    
+    </div>
+</body>
+</html>

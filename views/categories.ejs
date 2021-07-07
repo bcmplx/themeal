@@ -1,0 +1,16 @@
+<%- include('./partials/header'); %>
+    
+        <ul class="boxes">
+            
+            <% data.forEach(cat => { %>
+                <li class="box">
+                    <a href="/category/<%=cat.strCategory%>"><h2><%=cat.strCategory%></h2></a>
+                    <p class="tip"><%=cat.strCategoryDescription%></p>
+                    
+                </li>
+            <% })  %>
+    
+        </ul>
+    </div>
+</body>
+</html>

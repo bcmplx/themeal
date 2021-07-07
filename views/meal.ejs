@@ -1,0 +1,82 @@
+<%- include('./partials/header'); %>
+        
+        <ul class="boxes">
+            
+            
+            <li class="box meal">
+                <h2><%= data.strMeal %></h2>
+                <div class="mealhead">
+                    <div class="mealheadleft">
+                        <a href="/area/<%= data.strArea %>"><p class="tip">Area: <%= data.strArea %></p></a>
+                        <dl>
+                            <h3>Ingredients :</h5>
+                            <dt>. <%= data.strIngredient1 %></dt>
+                            <dd class="description">
+                                <p><%= data.strMeasure1 %></p>
+                            </dd>
+                            <dt>. <%= data.strIngredient2 %></dt>
+                            <dd class="description">
+                                <p><%= data.strMeasure2 %></p>
+                            </dd>
+                            <dt>. <%= data.strIngredient3 %></dt>
+                            <dd class="description">
+                                <p><%= data.strMeasure3     %></p>
+                            </dd>
+                            <dt>. <%= data.strIngredient4 %></dt>
+                            <dd class="description">
+                                <p><%= data.strMeasure4     %></p>
+                            </dd>
+                            <dt>. <%= data.strIngredient5 %></dt>
+                            <dd class="description">
+                                <p><%= data.strMeasure5     %></p>
+                            </dd>
+                            <dt>. <%= data.strIngredient1 %></dt>
+                            <dd class="description">
+                                <p><%= data.strMeasure1 %></p>
+                            </dd>
+                            <dt>. <%= data.strIngredient2 %></dt>
+                            <dd class="description">
+                                <p><%= data.strMeasure2 %></p>
+                            </dd>
+                            <dt>. <%= data.strIngredient3 %></dt>
+                            <dd class="description">
+                                <p><%= data.strMeasure3     %></p>
+                            </dd>
+                            <dt>. <%= data.strIngredient4 %></dt>
+                            <dd class="description">
+                                <p><%= data.strMeasure4     %></p>
+                            </dd>
+                            <dt>. <%= data.strIngredient5 %></dt>
+                            <dd class="description">
+                                <p><%= data.strMeasure5     %></p>
+                            </dd>
+                        </dl>
+                    </div>
+                
+                    <!-- <dt><%= data.strMealThumb %></dt> -->
+                    <img src="<%= data.strMealThumb %>" alt="<%= data.strMeal %>">
+                </div>
+                    <p><%= data.strInstructions %></p>
+                    <dl>
+                        <dt>House Blend</dt>
+                        <dd class="description">
+                            <p>Smoky, strong, and assertive, just like us.</p>
+                        </dd>
+                        <dt>Organic French Roast</dt>
+                        <dd class="description">
+                            <p>Smooth and mellow with hints of molasses.</p>
+                        </dd>
+                        <dt>Organic Decaf</dt>
+                        <dd class="description">
+                            <p>Full bodied and rich, we promise you won't miss the caffiene.</p>
+                        </dd>
+                    </dl>
+                
+            </li>
+            
+    
+        </ul>
+    
+    </div>
+</body>
+</html>
