@@ -9,15 +9,22 @@
         </ul>
         <ul class="boxes">
             <li class="box">
-                <a href="/categories/"><h2>Choose meal from categories</h2></a>               
+                <h2><a href="/categories/">Choose meal from categories</a></h2>  
+                <p class="tip"><a href="/category/<%= cat.strCategory %>">Category example: <%= cat.strCategory %></a></p>
+                <a href="/meal/<%=cat.strMeal%>"><img src="<%= cat.strMealThumb %>" alt="<%= cat.strMeal %>" class="imgHome"></a> 
+
             </li>
 
             <li class="box">
-                <a href="/areas/"><h2>Choose meal from a specific area</h2></a>                
+                <h2><a href="/areas/">Choose meal from a specific area</a></h2>
+                <p class="tip"><a href="/area/<%= area.strArea %>">Area example: <%= area.strArea %></a></p>
+                <a href="/meal/<%=area.strMeal%>"><img src="<%= area.strMealThumb %>" alt="<%= area.strMeal %>" class="imgHome" class="imgHome">    </a>          
             </li>
 
             <li class="box">
-                <a href="/random/"><h2>Pick a random meal</h2></a>               
+                <h2><a href="/random/">Pick a random meal</a></h2>   
+                <p class="tip">e.g: <%= random.strMeal %></p>  
+                <a href="/meal/<%=random.strMeal%>"><img src="<%= random.strMealThumb %>" alt="<%= random.strMeal %>" class="imgHome"></a>          
             </li>
     
         </ul>

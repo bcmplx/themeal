@@ -7,9 +7,21 @@ const categoryController = {
         res.redirect('/' + process.env.VERSION + req.originalUrl)
     },
 
-    home: (req,res) => {
-        // console.log(req.route.path)
-        res.render('index')
+    home: async (req,res ) => {
+
+        Promise.all([
+            fetch(process.env.API_URL + 'random.php').then(value => value.json()),
+            fetch(process.env.API_URL + 'random.php').then(value => value.json()),
+            fetch(process.env.API_URL + 'random.php').then(value => value.json())
+        ])
+        .then((value) => {
+            // console.log(value[0].meals[0])
+            res.render('index', {
+                random: value[0].meals[0],
+                cat: value[1].meals[0],
+                area: value[2].meals[0]
+            })
+        })
     },
 
     allCategories: (req,res) => {fetch(process.env.API_URL + 'categories.php')

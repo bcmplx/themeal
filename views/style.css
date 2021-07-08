@@ -27,6 +27,22 @@ body:after {
 	background: linear-gradient(45deg, #00000080, #00000080);
 }
 
+h2 a:visited, a:link {
+	color: #ff9800;
+}
+
+.tip a:visited, a:link {
+	color: #607d8b;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
 .h1 {
 	text-decoration: none !important;
 }
@@ -214,6 +230,10 @@ ul.boxes {
 img {
 	max-width: 500px;
 	max-height: 500px;
+}
+.imgHome {
+	max-width: 200px;
+	max-height: 200px
 }
 
 li.box {
