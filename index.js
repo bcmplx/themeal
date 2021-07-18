@@ -1,5 +1,4 @@
 require('dotenv').config();
-require('dotenv').config();
 const express = require('express');
 
 const app = express();
@@ -10,9 +9,9 @@ const routerRedirect = require('./app/routerRedirect')
 const port = process.env.PORT || 3001;
 
 
-app.use('/v1/', router)
+app.use('/' + process.env.VERSION + '/', router)
 app.use('/', routerRedirect)
 
 app.listen(port, () => {
-    console.log(`Server started on http://localhost:${port}`);
+    console.log(`Server started on port:${port}`);
 });

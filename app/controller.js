@@ -27,6 +27,7 @@ const categoryController = {
     allCategories: (req,res) => {fetch(process.env.API_URL + 'categories.php')
         .then(response =>response.json())
         .then(data => {
+            // console.log(data.categories)
             res.render('categories', {
                 data: data.categories
             })
